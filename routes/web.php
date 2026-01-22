@@ -2,8 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
+// // Welcome
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 // Home
-Route::get('/home', function () {
+Route::get('/', function () {
 return view('home');
 })->name('home');
 
@@ -39,7 +44,7 @@ Route::get('/projects', function () {
 // Contact
 Route::get('/contact', function () {
     return view('contact', [
-        'email' => 's.cervantes.aaronclyde@cmu.edu.ph', // change this
-        'phone' => '+63 991 430 7358',        // change this if needed
+        'email' => 's.cervantes.aaronclyde@cmu.edu.ph', 
+        'phone' => '+63 991 430 7358',    
     ]);
 })->name('contact');
